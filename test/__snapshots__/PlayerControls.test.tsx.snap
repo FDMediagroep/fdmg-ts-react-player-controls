@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PlayerControls renders correctly 1`] = `
+<div>
+  <ImageButton
+    alt="previous button"
+    className="previous-button"
+    onClick={[Function]}
+  />
+  <ImageButton
+    alt="play/pause button"
+    className="playpause-button"
+    onClick={[Function]}
+  />
+  <ImageButton
+    alt="next button"
+    className="next-button"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`PlayerControls renders correctly 2`] = `
+<div>
+  <ImageButton
+    alt="previous button"
+    className="previous-button"
+    onClick={[Function]}
+  />
+  <ImageButton
+    alt="play/pause button"
+    className="playpause-button"
+    onClick={[Function]}
+    src="img/playercontrols/play-button.tsx"
+  />
+  <ImageButton
+    alt="next button"
+    className="next-button"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`PlayerControls renders previous, next or play/pause button correctly 1`] = `
+<div>
+  <ImageButton
+    alt="previous button"
+    className="previous-button"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`PlayerControls renders previous, next or play/pause button correctly 2`] = `
+<div>
+  <ImageButton
+    alt="play/pause button"
+    className="playpause-button"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`PlayerControls renders previous, next or play/pause button correctly 3`] = `
+<div>
+  <ImageButton
+    alt="next button"
+    className="next-button"
+    onClick={[Function]}
+  />
+</div>
+`;
