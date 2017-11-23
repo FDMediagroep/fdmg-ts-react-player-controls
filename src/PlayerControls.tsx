@@ -1,5 +1,6 @@
 import * as React from 'react';
 import ImageButton from "fdmg-ts-react-image-button";
+import {MouseEvent} from "react";
 
 export interface PlayerControlsProps {
     className?: string;
@@ -9,9 +10,9 @@ export interface PlayerControlsProps {
     previousButtonImage?: string;
     playPauseButtonImage?: string;
     nextButtonImage?: string;
-    onPrevious?: string;
-    onPlayPause?: string;
-    onNext?: string;
+    onPrevious?: (event: MouseEvent<HTMLImageElement>) => void;
+    onPlayPause?: (event: MouseEvent<HTMLImageElement>) => void;
+    onNext?: (event: MouseEvent<HTMLImageElement>) => void;
 }
 
 /**

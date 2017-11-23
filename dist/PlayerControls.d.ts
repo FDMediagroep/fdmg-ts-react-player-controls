@@ -1,5 +1,6 @@
 /// <reference types="react" />
 import * as React from 'react';
+import { MouseEvent } from "react";
 export interface PlayerControlsProps {
     className?: string;
     showPreviousButton: boolean;
@@ -8,9 +9,9 @@ export interface PlayerControlsProps {
     previousButtonImage?: string;
     playPauseButtonImage?: string;
     nextButtonImage?: string;
-    onPrevious?: string;
-    onPlayPause?: string;
-    onNext?: string;
+    onPrevious?: (event: MouseEvent<HTMLImageElement>) => void;
+    onPlayPause?: (event: MouseEvent<HTMLImageElement>) => void;
+    onNext?: (event: MouseEvent<HTMLImageElement>) => void;
 }
 /**
  * PlayerControls composition - Renders the player's
