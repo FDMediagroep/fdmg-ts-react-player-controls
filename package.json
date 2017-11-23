@@ -1,6 +1,6 @@
 {
   "name": "fdmg-ts-react-player-controls",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ReactJS PlayerControls component",
   "main": "dist/PlayerControls.js",
   "types": "dist/PlayerControls.d.ts",
@@ -17,13 +17,13 @@
   "author": "Willem Liu, Alexander Eerenberg",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^21.1.5",
+    "@types/jest": "^21.1.8",
     "@types/react": "^16.0.23",
     "coveralls": "^3.0.0",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "enzyme-to-json": "^3.2.2",
-    "fdmg-ts-react-image-button": "^1.0.13",
+    "fdmg-ts-react-image-button": "^1.0.14",
     "jest": "^21.2.1",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
