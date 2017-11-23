@@ -26,17 +26,17 @@ export default class foo {
         this.props = props;
     }
 
-	previous() {
-		console.info('Previous button clicked');
-	}
-	
-	playPause() {
-		console.info('Previous button clicked');
-	}
-	
-	next() {
-		console.info('Previous button clicked');
-	}
+    previous() {
+        console.info('Previous button clicked');
+    }
+
+    playPause() {
+        console.info('Play/Pause button clicked');
+    }
+
+    next() {
+        console.info('Next button clicked');
+    }
 	
     render() {
         return (<PlayerControls
@@ -59,10 +59,9 @@ export default class foo {
 ### Resulting HTML
 ```
 <div class="player-controls">
-	<img alt="previous track button" class="previous-button">
-	<img src="img/playercontrols/previous-button.svg" alt="previous track button" class="previous-button">
+	<img src="img/playercontrols/previous-button.svg" alt="previous button" class="previous-button">
 	<img src="img/playercontrols/play-button.svg" alt="play/pause button" class="playpause-button">
-	<img src="img/playercontrols/next-button.svg" alt="next track button" class="next-button">
+	<img src="img/playercontrols/next-button.svg" alt="next button" class="next-button">
 </div>
 
 ```
