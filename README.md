@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/FDMediagroep/fdmg-ts-react-player-controls.svg?branch=master)](https://travis-ci.org/FDMediagroep/fdmg-ts-react-player-controls)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fdmg-ts-react-player-controls/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fdmg-ts-react-player-controls?branch=master)
 
+[![npm version](https://badge.fury.io/js/fdmg-ts-react-player-controls.svg)](https://badge.fury.io/js/fdmg-ts-react-player-controls)
+
 # fdmg-ts-react-player-controls
 [ReactJS](https://reactjs.org/) PlayerControls component. This component renders a PlayerControls component which consists of the previous, play/pause and next button.
 
