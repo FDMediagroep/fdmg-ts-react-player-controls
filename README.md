@@ -61,9 +61,24 @@ export default class foo {
 ### Resulting HTML
 ```
 <div class="player-controls">
-	<img src="img/playercontrols/previous-button.svg" alt="previous button" class="previous-button">
-	<img src="img/playercontrols/play-button.svg" alt="play/pause button" class="playpause-button">
-	<img src="img/playercontrols/next-button.svg" alt="next button" class="next-button">
+    <span class="previous-button"
+          role="button"
+          tabIndex="0"
+          aria-label="previous button">
+        <img src="img/playercontrols/previous-button.svg" alt="previous button">
+    </span>
+    <span class="playpause-button"
+          role="button"
+          tabIndex="0"
+          aria-label="play/pause button">
+        <img src="img/playercontrols/play-button.svg" alt="play/pause button" class="playpause-button">
+    </span>
+    <span class="next-button"
+          role="button"
+          tabIndex="0"
+          aria-label="next button">
+    	<img src="img/playercontrols/next-button.svg" alt="next button" class="next-button">
+    </span>
 </div>
 
 ```

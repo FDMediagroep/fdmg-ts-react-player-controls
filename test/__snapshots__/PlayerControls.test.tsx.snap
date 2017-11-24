@@ -56,12 +56,21 @@ exports[`PlayerControls renders previous, next or play/pause button correctly 1`
       className="previous-button"
       onClick={[Function]}
     >
-      <img
-        alt="previous button"
+      <span
+        aria-label="previous button"
         className="previous-button"
         onClick={[Function]}
         role="button"
-      />
+        tabIndex={0}
+      >
+        <Image
+          alt="previous button"
+        >
+          <img
+            alt="previous button"
+          />
+        </Image>
+      </span>
     </ImageButton>
   </div>
 </PlayerControls>
@@ -82,12 +91,21 @@ exports[`PlayerControls renders previous, next or play/pause button correctly 2`
       className="playpause-button"
       onClick={[Function]}
     >
-      <img
-        alt="play/pause button"
+      <span
+        aria-label="play/pause button"
         className="playpause-button"
         onClick={[Function]}
         role="button"
-      />
+        tabIndex={0}
+      >
+        <Image
+          alt="play/pause button"
+        >
+          <img
+            alt="play/pause button"
+          />
+        </Image>
+      </span>
     </ImageButton>
   </div>
 </PlayerControls>
@@ -108,12 +126,21 @@ exports[`PlayerControls renders previous, next or play/pause button correctly 3`
       className="next-button"
       onClick={[Function]}
     >
-      <img
-        alt="next button"
+      <span
+        aria-label="next button"
         className="next-button"
         onClick={[Function]}
         role="button"
-      />
+        tabIndex={0}
+      >
+        <Image
+          alt="next button"
+        >
+          <img
+            alt="next button"
+          />
+        </Image>
+      </span>
     </ImageButton>
   </div>
 </PlayerControls>

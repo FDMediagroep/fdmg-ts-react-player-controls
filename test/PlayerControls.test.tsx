@@ -44,11 +44,11 @@ test('PlayerControls buttons clicked', () => {
         />
     );
 
-    component.find('img.next-button').simulate('click');
+    component.find('span.next-button').simulate('click');
     expect(spyNext).toHaveBeenCalled();
-    component.find('img.playpause-button').simulate('click');
+    component.find('span.playpause-button').simulate('click');
     expect(spyPlay).toHaveBeenCalled();
-    component.find('img.previous-button').simulate('click');
+    component.find('span.previous-button').simulate('click');
     expect(spyPrev).toHaveBeenCalled();
 });
 
