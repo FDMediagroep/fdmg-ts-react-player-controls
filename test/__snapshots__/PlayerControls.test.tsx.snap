@@ -42,31 +42,79 @@ exports[`PlayerControls renders correctly 2`] = `
 `;
 
 exports[`PlayerControls renders previous, next or play/pause button correctly 1`] = `
-<div>
-  <ImageButton
-    alt="previous button"
-    className="previous-button"
-    onClick={[Function]}
-  />
-</div>
+<PlayerControls
+  onNext={[Function]}
+  onPlayPause={[Function]}
+  onPrevious={[Function]}
+  showNextButton={false}
+  showPlayPauseButton={false}
+  showPreviousButton={true}
+>
+  <div>
+    <ImageButton
+      alt="previous button"
+      className="previous-button"
+      onClick={[Function]}
+    >
+      <img
+        alt="previous button"
+        className="previous-button"
+        onClick={[Function]}
+        role="button"
+      />
+    </ImageButton>
+  </div>
+</PlayerControls>
 `;
 
 exports[`PlayerControls renders previous, next or play/pause button correctly 2`] = `
-<div>
-  <ImageButton
-    alt="play/pause button"
-    className="playpause-button"
-    onClick={[Function]}
-  />
-</div>
+<PlayerControls
+  onNext={[Function]}
+  onPlayPause={[Function]}
+  onPrevious={[Function]}
+  showNextButton={false}
+  showPlayPauseButton={true}
+  showPreviousButton={false}
+>
+  <div>
+    <ImageButton
+      alt="play/pause button"
+      className="playpause-button"
+      onClick={[Function]}
+    >
+      <img
+        alt="play/pause button"
+        className="playpause-button"
+        onClick={[Function]}
+        role="button"
+      />
+    </ImageButton>
+  </div>
+</PlayerControls>
 `;
 
 exports[`PlayerControls renders previous, next or play/pause button correctly 3`] = `
-<div>
-  <ImageButton
-    alt="next button"
-    className="next-button"
-    onClick={[Function]}
-  />
-</div>
+<PlayerControls
+  onNext={[Function]}
+  onPlayPause={[Function]}
+  onPrevious={[Function]}
+  showNextButton={true}
+  showPlayPauseButton={false}
+  showPreviousButton={false}
+>
+  <div>
+    <ImageButton
+      alt="next button"
+      className="next-button"
+      onClick={[Function]}
+    >
+      <img
+        alt="next button"
+        className="next-button"
+        onClick={[Function]}
+        role="button"
+      />
+    </ImageButton>
+  </div>
+</PlayerControls>
 `;

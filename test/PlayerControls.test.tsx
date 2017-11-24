@@ -53,7 +53,7 @@ test('PlayerControls buttons clicked', () => {
 });
 
 test('PlayerControls renders previous, next or play/pause button correctly', () => {
-    let component = shallow(
+    let component = mount(
         <PlayerControls
             showPreviousButton={true}
             showPlayPauseButton={false}
@@ -65,7 +65,7 @@ test('PlayerControls renders previous, next or play/pause button correctly', () 
     );
     expect(toJson(component)).toMatchSnapshot();
 
-    component = shallow(
+    component = mount(
         <PlayerControls
             showPreviousButton={false}
             showPlayPauseButton={true}
@@ -77,7 +77,7 @@ test('PlayerControls renders previous, next or play/pause button correctly', () 
     );
     expect(toJson(component)).toMatchSnapshot();
 
-    component = shallow(
+    component = mount(
         <PlayerControls
             showPreviousButton={false}
             showPlayPauseButton={false}
