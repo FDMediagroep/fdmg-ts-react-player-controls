@@ -21,8 +21,5 @@ export default class PlayerControls extends React.Component<PlayerControlsProps,
     state: any;
     props: any;
     constructor(props: PlayerControlsProps);
-    componentDidMount(): void;
-    componentWillUnmount(): void;
-    componentWillReceiveProps(nextProps: any): void;
     render(): JSX.Element;
 }

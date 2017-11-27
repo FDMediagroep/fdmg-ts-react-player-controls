@@ -1,6 +1,6 @@
 {
   "name": "fdmg-ts-react-player-controls",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "ReactJS PlayerControls component",
   "main": "dist/PlayerControls.js",
   "types": "dist/PlayerControls.d.ts",
@@ -53,6 +53,6 @@
     "mapCoverage": true
   },
   "dependencies": {
-    "fdmg-ts-react-image-button": "^1.0.19"
+    "fdmg-ts-react-image-button": "^1.0.20"
   }
 }

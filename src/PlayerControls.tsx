@@ -29,18 +29,6 @@ export default class PlayerControls extends React.Component<PlayerControlsProps,
         console.info('Player controls composition', this.state, this.props);        
     }
 
-    componentDidMount() {
-        console.info('Player controls mounted', this.props);
-    }
-        
-    componentWillUnmount() {
-        console.info('Player controls will unmount');
-    }
-
-    componentWillReceiveProps(nextProps) {
-        console.info('Player controls next props', nextProps);
-    }
-
     render() {
         return (
             <div className={this.props.className}>

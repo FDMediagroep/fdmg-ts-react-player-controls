@@ -24,15 +24,6 @@ var PlayerControls = /** @class */ (function (_super) {
         console.info('Player controls composition', _this.state, _this.props);
         return _this;
     }
-    PlayerControls.prototype.componentDidMount = function () {
-        console.info('Player controls mounted', this.props);
-    };
-    PlayerControls.prototype.componentWillUnmount = function () {
-        console.info('Player controls will unmount');
-    };
-    PlayerControls.prototype.componentWillReceiveProps = function (nextProps) {
-        console.info('Player controls next props', nextProps);
-    };
     PlayerControls.prototype.render = function () {
         return (React.createElement("div", { className: this.props.className },
             this.props.showPreviousButton ?
