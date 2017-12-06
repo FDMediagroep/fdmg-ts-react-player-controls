@@ -63,13 +63,13 @@ exports[`PlayerControls renders previous, next or play/pause button correctly 1`
         role="button"
         tabIndex={0}
       >
-        <Image
+        <Img
           alt="previous button"
         >
           <img
             alt="previous button"
           />
-        </Image>
+        </Img>
       </span>
     </ImageButton>
   </div>
@@ -98,13 +98,13 @@ exports[`PlayerControls renders previous, next or play/pause button correctly 2`
         role="button"
         tabIndex={0}
       >
-        <Image
+        <Img
           alt="play/pause button"
         >
           <img
             alt="play/pause button"
           />
-        </Image>
+        </Img>
       </span>
     </ImageButton>
   </div>
@@ -133,13 +133,13 @@ exports[`PlayerControls renders previous, next or play/pause button correctly 3`
         role="button"
         tabIndex={0}
       >
-        <Image
+        <Img
           alt="next button"
         >
           <img
             alt="next button"
           />
-        </Image>
+        </Img>
       </span>
     </ImageButton>
   </div>

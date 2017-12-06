@@ -1,6 +1,6 @@
 {
   "name": "fdmg-ts-react-player-controls",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "ReactJS PlayerControls component",
   "main": "dist/PlayerControls.js",
   "types": "dist/PlayerControls.d.ts",
@@ -24,6 +24,7 @@
     "enzyme-adapter-react-16": "^1.1.0",
     "enzyme-to-json": "^3.2.2",
     "jest": "^21.2.1",
+    "raf": "^3.4.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-test-renderer": "^16.1.1",
@@ -35,6 +36,9 @@
       "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "setupFiles": [
+      "raf/polyfill"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -53,6 +57,6 @@
     "mapCoverage": true
   },
   "dependencies": {
-    "fdmg-ts-react-image-button": "^1.0.20"
+    "fdmg-ts-react-image-button": "^1.0.21"
   }
 }
