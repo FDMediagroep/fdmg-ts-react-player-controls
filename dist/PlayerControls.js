@@ -21,20 +21,16 @@ var PlayerControls = /** @class */ (function (_super) {
     function PlayerControls(props) {
         var _this = _super.call(this, props) || this;
         _this.props = props;
-        console.info('Player controls composition', _this.state, _this.props);
         return _this;
     }
     PlayerControls.prototype.render = function () {
+        var previousButton = this.props.showPreviousButton ? (React.createElement(fdmg_ts_react_image_button_1.default, { src: this.props.previousButtonImage, onClick: this.props.onPrevious, className: "previous-button", alt: "previous button" })) : null;
+        var playPauseButton = this.props.showPlayPauseButton ? (React.createElement(fdmg_ts_react_image_button_1.default, { src: this.props.playPauseButtonImage, onClick: this.props.onPlayPause, className: "playpause-button", alt: "play/pause button" })) : null;
+        var nextButton = this.props.showNextButton ? (React.createElement(fdmg_ts_react_image_button_1.default, { src: this.props.nextButtonImage, onClick: this.props.onNext, className: "next-button", alt: "next button" })) : null;
         return (React.createElement("div", { className: this.props.className },
-            this.props.showPreviousButton ?
-                React.createElement(fdmg_ts_react_image_button_1.default, { src: this.props.previousButtonImage, onClick: this.props.onPrevious, className: "previous-button", alt: "previous button" })
-                : null,
-            this.props.showPlayPauseButton ?
-                React.createElement(fdmg_ts_react_image_button_1.default, { src: this.props.playPauseButtonImage, onClick: this.props.onPlayPause, className: "playpause-button", alt: "play/pause button" })
-                : null,
-            this.props.showNextButton ?
-                React.createElement(fdmg_ts_react_image_button_1.default, { src: this.props.nextButtonImage, onClick: this.props.onNext, className: "next-button", alt: "next button" })
-                : null));
+            previousButton,
+            playPauseButton,
+            nextButton));
     };
     return PlayerControls;
 }(React.Component));

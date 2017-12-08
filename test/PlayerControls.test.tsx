@@ -15,7 +15,7 @@ describe('PlayerControls', () => {
         Enzyme.configure({ adapter: new Adapter() });
     });
 
-    test('PlayerControls renders correctly', () => {
+    test('renders correctly', () => {
         const component = shallow(
             <PlayerControls
                 showPreviousButton={true}
@@ -32,7 +32,7 @@ describe('PlayerControls', () => {
         expect(toJson(component)).toMatchSnapshot();
     });
 
-    test('PlayerControls buttons clicked', () => {
+    test('buttons clicked', () => {
         const spyPrev = jest.fn();
         const spyPlay = jest.fn();
         const spyNext = jest.fn();
@@ -55,7 +55,7 @@ describe('PlayerControls', () => {
         expect(spyPrev).toHaveBeenCalled();
     });
 
-    test('PlayerControls renders previous, next or play/pause button correctly', () => {
+    test('renders previous, next or play/pause button correctly', () => {
         let component = mount(
             <PlayerControls
                 showPreviousButton={true}
@@ -91,6 +91,5 @@ describe('PlayerControls', () => {
             />
         );
         expect(toJson(component)).toMatchSnapshot();
-
     });
 });
