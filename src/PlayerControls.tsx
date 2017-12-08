@@ -17,7 +17,7 @@ export interface PlayerControlsProps {
 
 /**
  * PlayerControls composition - Renders the player's
- * previous, play/pause and next button. 
+ * previous, play/pause and next button.
  */
 export default class PlayerControls extends React.Component<PlayerControlsProps, any> {
     public state: any;
@@ -26,43 +26,44 @@ export default class PlayerControls extends React.Component<PlayerControlsProps,
     constructor(props: PlayerControlsProps) {
         super(props);
         this.props = props;
-        console.info('Player controls composition', this.state, this.props);        
     }
 
     render() {
+        const previousButton = this.props.showPreviousButton ? (
+                <ImageButton
+                    src={this.props.previousButtonImage}
+                    onClick={this.props.onPrevious}
+                    className="previous-button"
+                    alt="previous button"
+                />
+            ) : null;
+
+        const playPauseButton = this.props.showPlayPauseButton ? (
+                <ImageButton
+                    src={this.props.playPauseButtonImage}
+                    onClick={this.props.onPlayPause}
+                    className="playpause-button"
+                    alt="play/pause button"
+                />
+            ) : null;
+
+        const nextButton = this.props.showNextButton ? (
+                <ImageButton
+                    src={this.props.nextButtonImage}
+                    onClick={this.props.onNext}
+                    className="next-button"
+                    alt="next button"
+                />
+            ) : null;
+
         return (
             <div className={this.props.className}>
-                {this.props.showPreviousButton?
-                    <ImageButton
-                        src={this.props.previousButtonImage}
-                        onClick={this.props.onPrevious}
-                        className="previous-button"
-                        alt="previous button"
-                    />
-                    :null
-                }
+                {previousButton}
 
-                {this.props.showPlayPauseButton?
-                    <ImageButton
-                        src={this.props.playPauseButtonImage}
-                        onClick={this.props.onPlayPause}
-                        className="playpause-button"
-                        alt="play/pause button"
-                    />
-                    :null
-                }
+                {playPauseButton}
 
-                {this.props.showNextButton?
-                    <ImageButton
-                        src={this.props.nextButtonImage}
-                        onClick={this.props.onNext}
-                        className="next-button"
-                        alt="next button"
-                    />
-                    :null
-                }
+                {nextButton}
             </div>
         );
     }
 }
- 

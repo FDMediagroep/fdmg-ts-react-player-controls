@@ -6,87 +6,91 @@ import toJson from 'enzyme-to-json';
 import * as React from 'react';
 import PlayerControls from "../src/PlayerControls";
 
-console.info = function() {};
+console.info = () => {};
 
-beforeAll(() => {
-    Enzyme.configure({ adapter: new Adapter() });
-});
+describe('PlayerControls', () => {
+    const emptyFn = () => {};
 
-test('PlayerControls renders correctly', () => {
-    let component = shallow(
-        <PlayerControls
-            showPreviousButton={true}
-            showPlayPauseButton={true}
-            showNextButton={true}
-            onPrevious={()=>{}}
-            onPlayPause={()=>{}}
-            onNext={()=>{}}
-        />
-    );
-    expect(toJson(component)).toMatchSnapshot();
+    beforeAll(() => {
+        Enzyme.configure({ adapter: new Adapter() });
+    });
 
-    component.setProps({playPauseButtonImage: 'img/playercontrols/play-button.tsx'});
-    expect(toJson(component)).toMatchSnapshot();
-});
+    test('PlayerControls renders correctly', () => {
+        const component = shallow(
+            <PlayerControls
+                showPreviousButton={true}
+                showPlayPauseButton={true}
+                showNextButton={true}
+                onPrevious={emptyFn}
+                onPlayPause={emptyFn}
+                onNext={emptyFn}
+            />
+        );
+        expect(toJson(component)).toMatchSnapshot();
 
-test('PlayerControls buttons clicked', () => {
-    const spyPrev = jest.fn();
-    const spyPlay = jest.fn();
-    const spyNext = jest.fn();
-    let component = mount(
-        <PlayerControls
-            showPreviousButton={true}
-            showPlayPauseButton={true}
-            showNextButton={true}
-            onPrevious={spyPrev}
-            onPlayPause={spyPlay}
-            onNext={spyNext}
-        />
-    );
+        component.setProps({playPauseButtonImage: 'img/playercontrols/play-button.tsx'});
+        expect(toJson(component)).toMatchSnapshot();
+    });
 
-    component.find('span.next-button').simulate('click');
-    expect(spyNext).toHaveBeenCalled();
-    component.find('span.playpause-button').simulate('click');
-    expect(spyPlay).toHaveBeenCalled();
-    component.find('span.previous-button').simulate('click');
-    expect(spyPrev).toHaveBeenCalled();
-});
+    test('PlayerControls buttons clicked', () => {
+        const spyPrev = jest.fn();
+        const spyPlay = jest.fn();
+        const spyNext = jest.fn();
+        const component = mount(
+            <PlayerControls
+                showPreviousButton={true}
+                showPlayPauseButton={true}
+                showNextButton={true}
+                onPrevious={spyPrev}
+                onPlayPause={spyPlay}
+                onNext={spyNext}
+            />
+        );
 
-test('PlayerControls renders previous, next or play/pause button correctly', () => {
-    let component = mount(
-        <PlayerControls
-            showPreviousButton={true}
-            showPlayPauseButton={false}
-            showNextButton={false}
-            onPrevious={()=>{}}
-            onPlayPause={()=>{}}
-            onNext={()=>{}}
-        />
-    );
-    expect(toJson(component)).toMatchSnapshot();
+        component.find('span.next-button').simulate('click');
+        expect(spyNext).toHaveBeenCalled();
+        component.find('span.playpause-button').simulate('click');
+        expect(spyPlay).toHaveBeenCalled();
+        component.find('span.previous-button').simulate('click');
+        expect(spyPrev).toHaveBeenCalled();
+    });
 
-    component = mount(
-        <PlayerControls
-            showPreviousButton={false}
-            showPlayPauseButton={true}
-            showNextButton={false}
-            onPrevious={()=>{}}
-            onPlayPause={()=>{}}
-            onNext={()=>{}}
-        />
-    );
-    expect(toJson(component)).toMatchSnapshot();
+    test('PlayerControls renders previous, next or play/pause button correctly', () => {
+        let component = mount(
+            <PlayerControls
+                showPreviousButton={true}
+                showPlayPauseButton={false}
+                showNextButton={false}
+                onPrevious={emptyFn}
+                onPlayPause={emptyFn}
+                onNext={emptyFn}
+            />
+        );
+        expect(toJson(component)).toMatchSnapshot();
 
-    component = mount(
-        <PlayerControls
-            showPreviousButton={false}
-            showPlayPauseButton={false}
-            showNextButton={true}
-            onPrevious={()=>{}}
-            onPlayPause={()=>{}}
-            onNext={()=>{}}
-        />
-    );
-    expect(toJson(component)).toMatchSnapshot();
+        component = mount(
+            <PlayerControls
+                showPreviousButton={false}
+                showPlayPauseButton={true}
+                showNextButton={false}
+                onPrevious={emptyFn}
+                onPlayPause={emptyFn}
+                onNext={emptyFn}
+            />
+        );
+        expect(toJson(component)).toMatchSnapshot();
 
+        component = mount(
+            <PlayerControls
+                showPreviousButton={false}
+                showPlayPauseButton={false}
+                showNextButton={true}
+                onPrevious={emptyFn}
+                onPlayPause={emptyFn}
+                onNext={emptyFn}
+            />
+        );
+        expect(toJson(component)).toMatchSnapshot();
+
+    });
 });
