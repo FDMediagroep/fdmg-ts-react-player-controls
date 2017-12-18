@@ -1,17 +1,17 @@
 [![Build Status](https://travis-ci.org/FDMediagroep/fdmg-ts-react-player-controls.svg?branch=master)](https://travis-ci.org/FDMediagroep/fdmg-ts-react-player-controls)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fdmg-ts-react-player-controls/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fdmg-ts-react-player-controls?branch=master)
 
-[![npm version](https://badge.fury.io/js/fdmg-ts-react-player-controls.svg)](https://badge.fury.io/js/fdmg-ts-react-player-controls)
+[![npm version](https://badge.fury.io/js/%40fdmg%2Fts-react-player-controls.svg)](https://badge.fury.io/js/%40fdmg%2Fts-react-player-controls)
 
 # fdmg-ts-react-player-controls
 [ReactJS](https://reactjs.org/) PlayerControls component. This component renders a PlayerControls component which consists of the previous, play/pause and next button.
 
 ## Installation
-- Run `npm i --save-dev fdmg-ts-react-player-controls`
+- Run `npm i --save-dev @fdmg/ts-react-player-controls`
 
 or
 
-- Run `yarn add fdmg-ts-react-player-controls --dev`
+- Run `yarn add @fdmg/ts-react-player-controls --dev`
 
 ## Usage
 ### TypeScript

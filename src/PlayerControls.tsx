@@ -1,5 +1,5 @@
 import * as React from 'react';
-import ImageButton from "fdmg-ts-react-image-button";
+import ImageButton from "@fdmg/ts-react-image-button";
 import {MouseEvent} from "react";
 
 export interface PlayerControlsProps {
