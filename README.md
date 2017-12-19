@@ -4,6 +4,8 @@
 [![npm version](https://badge.fury.io/js/%40fdmg%2Fts-react-player-controls.svg)](https://badge.fury.io/js/%40fdmg%2Fts-react-player-controls)
 
 # fdmg-ts-react-player-controls
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/FDMediagroep/fdmg-ts-react-player-controls.svg)](https://greenkeeper.io/)
 [ReactJS](https://reactjs.org/) PlayerControls component. This component renders a PlayerControls component which consists of the previous, play/pause and next button.
 
 ## Installation
