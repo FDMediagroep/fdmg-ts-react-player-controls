@@ -1,0 +1,50 @@
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 120px;
+  margin: -5px auto 0 auto;
+  img {
+    max-width: 20px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .playpause-button img {
+    max-width: 30px;
+    padding-bottom: 0;
+  }
+}
+
+.IE10 {
+  .player-controls {
+    .next-button, .previous-button {
+      img {
+        padding: 5px;
+        max-width: 20px;
+      }
+    }
+    .playpause-button {
+      img {
+        max-width: 30px;
+      }
+      margin: 0 10px;
+    }
+    div {
+      display: block;
+      text-align: center;
+    }
+  }
+  .counters {
+    display: block;
+    height: 12px;
+    span {
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+}
