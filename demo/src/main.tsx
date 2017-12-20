@@ -10,9 +10,9 @@ import PlayerControls from '../../src/PlayerControls';
 // Render react components.
 ReactDOM.render(
     <PlayerControls
-        playPauseButtonImage='img/play-button.svg'
-        nextButtonImage='img/next-button.svg'
-        previousButtonImage='img/previous-button.svg'
+        playPauseButtonImage='img/playercontrols/play-button.svg'
+        nextButtonImage='img/playercontrols/next-button.svg'
+        previousButtonImage='img/playercontrols/previous-button.svg'
         className='player-controls'
         showPreviousButton={true}
         showPlayPauseButton={true}
