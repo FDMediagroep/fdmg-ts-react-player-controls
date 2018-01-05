@@ -10,6 +10,9 @@
     display: block;
     background-repeat: no-repeat;
     background-size: contain;
+    &:hover {
+      cursor: pointer;
+    }
     &.previous-button, &.next-button {
       background-size: 22px 22px;
       background-position-y: 4px;
