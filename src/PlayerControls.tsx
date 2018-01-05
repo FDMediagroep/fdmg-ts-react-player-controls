@@ -1,5 +1,4 @@
 import * as React from 'react';
-import ImageButton from "@fdmg/ts-react-image-button";
 import {MouseEvent} from "react";
 
 export interface PlayerControlsProps {
@@ -7,9 +6,9 @@ export interface PlayerControlsProps {
     showPreviousButton: boolean;
     showPlayPauseButton: boolean;
     showNextButton: boolean;
-    previousButtonImage?: string;
-    playPauseButtonImage?: string;
-    nextButtonImage?: string;
+    previousButtonImageClass?: string;
+    playPauseButtonClass?: string;
+    nextButtonImageClass?: string;
     onPrevious?: (event: MouseEvent<HTMLImageElement>) => void;
     onPlayPause?: (event: MouseEvent<HTMLImageElement>) => void;
     onNext?: (event: MouseEvent<HTMLImageElement>) => void;
@@ -30,29 +29,23 @@ export default class PlayerControls extends React.Component<PlayerControlsProps,
 
     render() {
         const previousButton = this.props.showPreviousButton ? (
-                <ImageButton
-                    src={this.props.previousButtonImage}
+                <a
                     onClick={this.props.onPrevious}
-                    className="previous-button"
-                    alt="previous button"
+                    className={this.props.previousButtonImageClass ? this.props.previousButtonImageClass : "previous-button"}
                 />
             ) : null;
 
         const playPauseButton = this.props.showPlayPauseButton ? (
-                <ImageButton
-                    src={this.props.playPauseButtonImage}
+                <a
                     onClick={this.props.onPlayPause}
-                    className="playpause-button"
-                    alt="play/pause button"
+                    className={this.props.playPauseButtonImageClass ? this.props.playPauseButtonImageClass : "play-button"}
                 />
             ) : null;
 
         const nextButton = this.props.showNextButton ? (
-                <ImageButton
-                    src={this.props.nextButtonImage}
+                <a
                     onClick={this.props.onNext}
-                    className="next-button"
-                    alt="next button"
+                    className={this.props.nextButtonImageClass ? this.props.nextButtonImageClass : "next-button"}
                 />
             ) : null;
 

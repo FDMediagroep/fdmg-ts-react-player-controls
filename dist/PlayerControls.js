@@ -11,7 +11,6 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = require("react");
-var ts_react_image_button_1 = require("@fdmg/ts-react-image-button");
 /**
  * PlayerControls composition - Renders the player's
  * previous, play/pause and next button.
@@ -24,9 +23,9 @@ var PlayerControls = /** @class */ (function (_super) {
         return _this;
     }
     PlayerControls.prototype.render = function () {
-        var previousButton = this.props.showPreviousButton ? (React.createElement(ts_react_image_button_1.default, { src: this.props.previousButtonImage, onClick: this.props.onPrevious, className: "previous-button", alt: "previous button" })) : null;
-        var playPauseButton = this.props.showPlayPauseButton ? (React.createElement(ts_react_image_button_1.default, { src: this.props.playPauseButtonImage, onClick: this.props.onPlayPause, className: "playpause-button", alt: "play/pause button" })) : null;
-        var nextButton = this.props.showNextButton ? (React.createElement(ts_react_image_button_1.default, { src: this.props.nextButtonImage, onClick: this.props.onNext, className: "next-button", alt: "next button" })) : null;
+        var previousButton = this.props.showPreviousButton ? (React.createElement("a", { onClick: this.props.onPrevious, className: this.props.previousButtonImageClass ? this.props.previousButtonImageClass : "previous-button" })) : null;
+        var playPauseButton = this.props.showPlayPauseButton ? (React.createElement("a", { onClick: this.props.onPlayPause, className: this.props.playPauseButtonImageClass ? this.props.playPauseButtonImageClass : "play-button" })) : null;
+        var nextButton = this.props.showNextButton ? (React.createElement("a", { onClick: this.props.onNext, className: this.props.nextButtonImageClass ? this.props.nextButtonImageClass : "next-button" })) : null;
         return (React.createElement("div", { className: this.props.className },
             previousButton,
             playPauseButton,

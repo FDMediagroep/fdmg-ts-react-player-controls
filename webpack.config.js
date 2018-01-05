@@ -97,7 +97,7 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            publicPath: 'img/playercontrols/',
+                            publicPath: '',
                             outputPath: '../img/playercontrols/'
                         }
                     }

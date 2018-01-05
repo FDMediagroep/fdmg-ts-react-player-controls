@@ -1,18 +1,35 @@
 .player-controls {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  max-width: 120px;
-  margin: -5px auto 0 auto;
-  img {
-    max-width: 20px;
-    &:hover {
-      cursor: pointer;
+  max-width: 130px;
+  margin: 0 auto;
+  a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &.previous-button, &.next-button {
+      background-size: 22px 22px;
+      background-position-y: 4px;
+      background-position-x: 4px;
     }
-  }
-  .playpause-button img {
-    max-width: 30px;
-    padding-bottom: 0;
+    &.play-button, &.pause-button {
+      background-size: 30px 30px;
+    }
+    &.previous-button {
+      background-image: url("../img/playercontrols/previous-button.svg");
+    }
+    &.next-button {
+      background-image: url("../img/playercontrols/next-button.svg");
+    }
+    &.play-button {
+      background-image: url("../img/playercontrols/play-button.svg");
+    }
+    &.pause-button {
+      background-image: url("../img/playercontrols/pause-button.svg");
+    }
   }
 }
 

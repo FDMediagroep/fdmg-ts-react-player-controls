@@ -6,9 +6,9 @@ export interface PlayerControlsProps {
     showPreviousButton: boolean;
     showPlayPauseButton: boolean;
     showNextButton: boolean;
-    previousButtonImage?: string;
-    playPauseButtonImage?: string;
-    nextButtonImage?: string;
+    previousButtonImageClass?: string;
+    playPauseButtonClass?: string;
+    nextButtonImageClass?: string;
     onPrevious?: (event: MouseEvent<HTMLImageElement>) => void;
     onPlayPause?: (event: MouseEvent<HTMLImageElement>) => void;
     onNext?: (event: MouseEvent<HTMLImageElement>) => void;

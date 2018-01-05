@@ -28,7 +28,10 @@ describe('PlayerControls', () => {
         );
         expect(toJson(component)).toMatchSnapshot();
 
-        component.setProps({playPauseButtonImage: 'img/playercontrols/play-button.tsx'});
+        component.setProps({playPauseButtonImageClass: 'play-button'});
+        expect(toJson(component)).toMatchSnapshot();
+
+        component.setProps({playPauseButtonImageClass: 'pause-button'});
         expect(toJson(component)).toMatchSnapshot();
     });
 
@@ -47,12 +50,16 @@ describe('PlayerControls', () => {
             />
         );
 
-        component.find('span.next-button').simulate('click');
+        component.find('a.next-button').simulate('click');
         expect(spyNext).toHaveBeenCalled();
-        component.find('span.playpause-button').simulate('click');
+        component.find('a.play-button').simulate('click');
         expect(spyPlay).toHaveBeenCalled();
-        component.find('span.previous-button').simulate('click');
+        component.find('a.previous-button').simulate('click');
         expect(spyPrev).toHaveBeenCalled();
+
+        component.setProps({playPauseButtonImageClass: 'pause-button'});
+        component.find('a.pause-button').simulate('click');
+        expect(spyPlay).toHaveBeenCalled();
     });
 
     test('renders previous, next or play/pause button correctly', () => {
