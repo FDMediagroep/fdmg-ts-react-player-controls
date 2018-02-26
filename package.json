@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/ts-react-player-controls",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "ReactJS PlayerControls component",
   "main": "dist/PlayerControls.js",
   "types": "dist/PlayerControls.d.ts",
@@ -12,7 +12,7 @@
     "lint": "tslint -p .",
     "updateSnapshot": "jest --updateSnapshot",
     "u": "npm test -- -u",
-    "webpack-demo": "set NODE_ENV=production&& webpack --env production"
+    "webpack-demo": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -25,31 +25,32 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^22.0.0",
-    "@types/react": "^16.0.31",
-    "awesome-typescript-loader": "^3.4.1",
+    "@types/react": "^16.0.38",
+    "awesome-typescript-loader": "^3.5.0",
     "coveralls": "^3.0.0",
-    "css-loader": "^0.28.8",
+    "css-loader": "^0.28.10",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.6",
-    "jest": "^22.0.4",
-    "jest-cli": "^22.0.4",
+    "enzyme-to-json": "^3.3.1",
+    "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+    "file-loader": "^1.1.9",
+    "jest": "^22.4.2",
+    "jest-cli": "^22.4.2",
     "node-sass": "^4.7.2",
     "preact": "^8.2.7",
-    "preact-compat": "^3.17.0",
+    "preact-compat": "^3.18.0",
     "raf": "^3.4.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.20.0",
-    "ts-jest": "^22.0.0",
-    "tslint": "^5.8.0",
-    "tslint-react": "^3.3.3",
-    "typescript": "^2.6.2",
-    "webpack": "^4.0.0"
+    "ts-jest": "^22.4.0",
+    "tslint": "^5.9.1",
+    "tslint-react": "^3.5.1",
+    "typescript": "^2.7.2",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^2.0.9"
   },
   "jest": {
     "transform": {
@@ -73,8 +74,7 @@
       "lcov",
       "text",
       "text-summary"
-    ],
-    "mapCoverage": true
+    ]
   },
   "dependencies": {}
 }
