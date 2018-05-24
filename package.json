@@ -35,7 +35,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "jest": "^22.4.3",
-    "jest-cli": "^22.4.3",
+    "jest-cli": "^23.0.0",
     "node-sass": "^4.9.0",
     "preact": "^8.2.7",
     "preact-compat": "^3.18.0",
