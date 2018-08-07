@@ -36,6 +36,7 @@
     "file-loader": "^1.1.11",
     "jest": "^22.4.3",
     "jest-cli": "^23.0.0",
+    "jest-localstorage-mock": "^2.2.0",
     "node-sass": "^4.9.0",
     "preact": "^8.2.7",
     "preact-compat": "^3.18.0",
@@ -53,12 +54,15 @@
     "webpack-cli": "^3.0.3"
   },
   "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
     "transform": {
-      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+      "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "setupFiles": [
-      "raf/polyfill"
+      "raf/polyfill",
+      "jest-localstorage-mock"
     ],
     "moduleFileExtensions": [
       "ts",
