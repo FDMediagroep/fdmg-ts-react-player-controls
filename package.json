@@ -42,7 +42,7 @@
     "preact-compat": "^3.18.0",
     "raf": "^3.4.0",
     "react": "16.5.2",
-    "react-dom": "^16.3.2",
+    "react-dom": "^16.5.2",
     "react-test-renderer": "^16.3.2",
     "sass-loader": "^7.0.0",
     "style-loader": "^0.23.0",
