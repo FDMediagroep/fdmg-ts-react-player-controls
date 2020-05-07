@@ -1,3 +1,5 @@
+> :exclamation: **DEPRECATED** :exclamation:
+
 # fdmg-ts-react-player-controls
 [![Build Status](https://travis-ci.org/FDMediagroep/fdmg-ts-react-player-controls.svg?branch=master)](https://travis-ci.org/FDMediagroep/fdmg-ts-react-player-controls)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fdmg-ts-react-player-controls/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fdmg-ts-react-player-controls?branch=master)
